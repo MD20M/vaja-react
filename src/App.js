@@ -13,8 +13,8 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route path="/" component={<Nekaj/>}></Route>
-        <Route path="/frag" component={<Frag/>}></Route>
+        <Route path="/" element={<Nekaj/>}></Route>
+        <Route path="/frag" element={<Frag/>}></Route>
       </Routes>
     </div>
   );

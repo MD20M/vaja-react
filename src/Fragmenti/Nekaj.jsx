@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import Cookies from 'js-cookie';
+
 export function Nekaj(){
     const [tekst, setTekst] = useState(true);
     const tekst1 = "Nekaj 1";
@@ -7,6 +9,7 @@ export function Nekaj(){
     const reference = useRef(0);
     useEffect((e)=>{
       reference.current++;
+      Cookies.set("value", reference.current.toString());
     },[tekst])
     return(
       <>
@@ -15,6 +18,7 @@ export function Nekaj(){
         <button onClick={(e)=>{setTekst(!tekst)}}> klikni me</button>
         <span>{tekst? tekst1 : tekst2}</span>
         <div>{reference.current}</div>
+        <div>{Cookies.get("value")}</div>
       </>
     )
   }

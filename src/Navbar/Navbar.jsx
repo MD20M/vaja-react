@@ -18,7 +18,7 @@ export default function Navbar(){
                 <li>
                     <NavItem>
                         <NavbarText>
-                            <Link to="/frag">Frag</Link>
+                            <Link to="frag">Frag</Link>
                         </NavbarText>
                     </NavItem>
                 </li>
