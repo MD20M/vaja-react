@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
 import { NavItem, NavbarText } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 export default function Navbar(){
